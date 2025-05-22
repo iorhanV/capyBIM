@@ -1,0 +1,62 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FEE25054-6C59-4ABB-A9DB-3E2F023BA6FF}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Changelog.md = Changelog.md
+		Readme.md = Readme.md
+		Build\Build.Configuration.cs = Build\Build.Configuration.cs
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Automation", "Automation", "{B3D690B1-DA0C-4F7D-B1F7-9B3C02D8BCFC}"
+EndProject
+Project("{9CB7D0CF-CB9E-41C7-940F-D5FC5056769A}") = "Build", "build\Build.csproj", "{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}"
+EndProject
+Project("{9CB7D0CF-CB9E-41C7-940F-D5FC5056769A}") = "Installer", "install\Installer.csproj", "{3DCF7C81-43A0-46F7-AA95-8D148B605864}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug R21|Any CPU = Debug R21|Any CPU
+		Debug R22|Any CPU = Debug R22|Any CPU
+		Debug R23|Any CPU = Debug R23|Any CPU
+		Debug R24|Any CPU = Debug R24|Any CPU
+		Debug R25|Any CPU = Debug R25|Any CPU
+		Debug R26|Any CPU = Debug R26|Any CPU
+		Release R21|Any CPU = Release R21|Any CPU
+		Release R22|Any CPU = Release R22|Any CPU
+		Release R23|Any CPU = Release R23|Any CPU
+		Release R24|Any CPU = Release R24|Any CPU
+		Release R25|Any CPU = Release R25|Any CPU
+		Release R26|Any CPU = Release R26|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R21|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R22|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R23|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R24|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R25|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Debug R26|Any CPU.ActiveCfg = Debug|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R21|Any CPU.ActiveCfg = Release|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R22|Any CPU.ActiveCfg = Release|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R23|Any CPU.ActiveCfg = Release|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R24|Any CPU.ActiveCfg = Release|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R25|Any CPU.ActiveCfg = Release|Any CPU
+		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1}.Release R26|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R21|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R22|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R23|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R24|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R25|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Debug R26|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R21|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R22|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R23|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R24|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R25|Any CPU.ActiveCfg = Release|Any CPU
+		{3DCF7C81-43A0-46F7-AA95-8D148B605864}.Release R26|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+		GlobalSection(NestedProjects) = preSolution
+    		{40C11620-9ED5-4C11-A5C2-FF87BF282FC1} = {B3D690B1-DA0C-4F7D-B1F7-9B3C02D8BCFC}
+    		{3DCF7C81-43A0-46F7-AA95-8D148B605864} = {B3D690B1-DA0C-4F7D-B1F7-9B3C02D8BCFC}
+    	EndGlobalSection
+EndGlobal
