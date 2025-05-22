@@ -1,0 +1,15 @@
+﻿<RevitAddIns>
+    <AddIn Type="Application">
+        <Name>capyBIM</Name>
+        <Assembly>capyBIM\capyBIM.dll</Assembly>
+        <AddInId>A60D5549-2E8F-444D-B2F9-1C0A8096297D</AddInId>
+        <FullClassName>capyBIM.Application</FullClassName>
+        <VendorId>Development</VendorId>
+        <VendorDescription></VendorDescription>
+        <VendorEmail></VendorEmail>
+    </AddIn>
+    <ManifestSettings>
+        <UseRevitContext>False</UseRevitContext>
+        <ContextName>capyBIM</ContextName>
+    </ManifestSettings>
+</RevitAddIns>
