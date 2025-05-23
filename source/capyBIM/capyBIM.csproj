@@ -53,23 +53,39 @@
 
     <ItemGroup>
         <!-- Revit References -->
-        <PackageReference Include="Nice3point.Revit.Build.Tasks" Version="3.0.1"/>
-        <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitVersion).*"/>
-        <PackageReference Include="Nice3point.Revit.Extensions" Version="$(RevitVersion).*"/>
-        <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*"/>
-        <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*"/>
+        <PackageReference Include="Nice3point.Revit.Build.Tasks" Version="3.0.1" />
+        <PackageReference Include="Nice3point.Revit.Toolkit" Version="$(RevitVersion).*" />
+        <PackageReference Include="Nice3point.Revit.Extensions" Version="$(RevitVersion).*" />
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPI" Version="$(RevitVersion).*" />
+        <PackageReference Include="Nice3point.Revit.Api.RevitAPIUI" Version="$(RevitVersion).*" />
+        <PackageReference Include="Nice3point.Revit.Api.AdWindows" Version="$(RevitVersion).*"/>
+        <PackageReference Include="Nice3point.Revit.Api.UIFramework" Version="$(RevitVersion).*" PrivateAssets="all"/>
+        <PackageReference Include="Nice3point.Revit.Api.UIFrameworkServices" Version="$(RevitVersion).*" PrivateAssets="all"/>
 
         <!-- MVVM -->
-        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0"/>
-    </ItemGroup>
+        <PackageReference Include="CommunityToolkit.Mvvm" Version="8.4.0" />
 
-    <ItemGroup>
-        <Resource Include="Resources\Icons\RibbonIcon16.png"/>
-        <Resource Include="Resources\Icons\RibbonIcon32.png"/>
+        <!--MULTI-DPI ICON IMPORT-->
+        <PackageReference Include="ricaun.Revit.UI" Version="0.8.0" />
     </ItemGroup>
 
     <ItemGroup>
         <Folder Include="Models"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Update="Resources\Files\Tooltips.resx">
+        <Generator>ResXFileCodeGenerator</Generator>
+        <LastGenOutput>Tooltips.Designer.cs</LastGenOutput>
+      </EmbeddedResource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="Resources\Files\Tooltips.Designer.cs">
+        <DesignTime>True</DesignTime>
+        <AutoGen>True</AutoGen>
+        <DependentUpon>Tooltips.resx</DependentUpon>
+      </Compile>
     </ItemGroup>
 
 </Project>
