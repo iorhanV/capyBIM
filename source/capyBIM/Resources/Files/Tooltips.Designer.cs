@@ -61,9 +61,7 @@ namespace capyBIM.Resources.Files {
         
         /// <summary>
         ///   Looks up a localized string similar to Description:
-        ///Lorem ipsum
-        ///
-        ///Author: Iorhan Vendruscolo.
+        ///Quick access the addin Github repo..
         /// </summary>
         internal static string ResourcesGitHub {
             get {
@@ -73,9 +71,7 @@ namespace capyBIM.Resources.Files {
         
         /// <summary>
         ///   Looks up a localized string similar to Description:
-        ///Lorem ipsum
-        ///
-        ///Author: Iorhan Vendruscolo.
+        ///Takes you to my LinkedIn Profile..
         /// </summary>
         internal static string ResourcesIn {
             get {
@@ -85,9 +81,7 @@ namespace capyBIM.Resources.Files {
         
         /// <summary>
         ///   Looks up a localized string similar to Description:
-        ///Lorem ipsum
-        ///
-        ///Author: Iorhan Vendruscolo.
+        ///Quick access to rvtdocs.com for Revit documentation and resources..
         /// </summary>
         internal static string ResourcesRVTDocs {
             get {
@@ -97,9 +91,8 @@ namespace capyBIM.Resources.Files {
         
         /// <summary>
         ///   Looks up a localized string similar to Description:
-        ///Rotate selected elements to specified angle.
-        ///
-        ///Author: Iorhan Vendruscolo .
+        ///Rotate selected elements counterclockwise to specified angle.
+        ///.
         /// </summary>
         internal static string ToolsRotate {
             get {

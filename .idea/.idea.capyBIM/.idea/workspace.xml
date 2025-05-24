@@ -10,31 +10,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsResources.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Extensions/DocumentExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Extensions/ElementExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Extensions/RibbonPanelExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Extensions/UIControlledApplicationExt.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/General/Globals.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesAS.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesGitHub.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesIn.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesLinks.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesRVTDocs.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsRotate.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/RibbonUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/Utils/RibbonController.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/Utils/VisualUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/RotateView.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/RotateView.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineL.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineL.xaml.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Compile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Compile.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/capyBIM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/capyBIM.sln" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/RibbonIcon16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/RibbonIcon32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/StartupCommand.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesGitHub.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesGitHub.tiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesIn.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesIn.tiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesRVTDocs.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesRVTDocs.tiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsRotate.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsRotate.tiff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/ViewModels/capyBIMViewModel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/capyBIMView.xaml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/capyBIMView.xaml.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +62,15 @@
 }</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/02/2861ead9/ManifestBasedResourceGroveler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/90/7c0daa0d/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1ffbf8550a84a39b94d417bfe30fb372a6f20/e6/5c1a9475/_003CModule_003E.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1a2372e6258b231bd8abd5d5ec4756e94208963608726ccc1cb05bbc9eeb96/ObservablePropertyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6e599226e3176e2f988294a8f9985a236212f64c788af5e9f9720a979cd623d/ExternalApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/build/Build.Configuration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/Application.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/RotateView.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/VPLineL.g.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/VPLineLen.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -88,7 +90,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;#1 on dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -180,7 +182,10 @@
       <workItem from="1747872869996" duration="487000" />
       <workItem from="1747873467930" duration="70000" />
       <workItem from="1747873662684" duration="4759000" />
-      <workItem from="1747991096149" duration="2199000" />
+      <workItem from="1747991096149" duration="10373000" />
+      <workItem from="1748010511447" duration="143000" />
+      <workItem from="1748071266004" duration="99000" />
+      <workItem from="1748071671660" duration="11290000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -198,7 +203,15 @@
       <option name="project" value="LOCAL" />
       <updated>1747873113150</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- Added Globals, Extensions and Resources&#10;- Added Resources panel&#10;- Started Rotate Tool implementation">
+      <option name="closed" value="true" />
+      <created>1747994987131</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1747994987131</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -206,10 +219,22 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="- Added Globals, Extensions and Resources&#10;- Added Resources panel&#10;- Started Rotate Tool implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="- Added Globals, Extensions and Resources&#10;- Added Resources panel&#10;- Started Rotate Tool implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -225,6 +250,12 @@
         <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
+        </breakpoint>
+        <breakpoint enabled="true" type="DotNet_Exception_Breakpoints">
+          <properties exception="System.ArgumentOutOfRangeException" breakIfHandledByUserCode="true" breakIfHandledByOtherCode="false" isInternal="false" displayValue="ArgumentOutOfRangeException" namespaceName="System">
+            <option name="internal" value="false" />
+          </properties>
+          <option name="timeStamp" value="4" />
         </breakpoint>
       </breakpoints>
     </breakpoint-manager>

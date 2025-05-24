@@ -2,9 +2,11 @@ name: Compile
 
 on:
   push:
-    branches:
-      - '*'
+    branches-ignore:
+      - dev
   pull_request:
+    branches-ignore:
+      - dev
 
 jobs:
   compile:

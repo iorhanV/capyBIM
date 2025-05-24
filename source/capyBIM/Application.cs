@@ -4,7 +4,6 @@ using Autodesk.Revit.UI.Events;
 using capyBIM.CmdsResources;
 using capyBIM.CmdsTools;
 using Nice3point.Revit.Toolkit.External;
-using capyBIM.Commands;
 using capyBIM.Extensions;
 using zRib = capyBIM.Utilities.RibbonUtils;
 
@@ -76,16 +75,10 @@ namespace capyBIM
             
             // Create Tools panel
             var panelTools = uiCtlApp.Ext_AddRibbonPanel(Globals.AddinName, "Tools");
-            
-            Debug.WriteLine("Panel Tools");
 
             var pushRotate = panelTools.Ext_AddPushButton<CmdRotate>("Rotate");
-            
-            // var panel = Application.CreatePanel("Commands", "capyBIM");
-            //
-            // panel.AddPushButton<StartupCommand>("Execute")
-            //     .SetImage("/capyBIM;component/Resources/Icons/RibbonIcon16.png")
-            //     .SetLargeImage("/capyBIM;component/Resources/Icons/RibbonIcon32.png");
+            pushRotate.AddShortcuts("RS");
+
         }
         
         #region Use idling to register UiApp

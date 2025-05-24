@@ -21,76 +21,55 @@ public class CmdRotate : IExternalCommand
         Double angle = 45;
         ICollection<Element> selElement = new List<Element>();
         
-        selElement = uiDoc.Selection.PickObjects(ObjectType.Element
-                , "Pick elements to rotate")
-            .Select(x => doc.GetElement(x)).ToList();
-        
-        TaskDialog.Show("Rotate Elements", "Rotate Elements");
+        try
+        {
+            var options = SetupOptionsBar();
+            selElement = PickToElements(uiDoc, doc);  
+            angle = options.Angle;
+        }
+        catch (OperationCanceledException)
+        {
+            // ignored
+        }
+        finally
+        {
+            using var transaction = new Transaction(doc);
+            transaction.Start("Rotate Elements");
+            foreach (Element elem in selElement)
+            {
+                zTools.RotateElements(elem, doc, angle);
+            }
+            transaction.Commit();
+            RibbonController.HideOptionsBar();
+        }
 
-        // var ui = new RotateElemView();
-        // RibbonController.ShowOptionsBar(ui);
-        // // ICollection<Element> selElement = PickToElements(uiDoc, doc);            
-        // angle = ui.Angle;
-        
-        // try
-        // {
-        //     var options = SetupOptionsBar();
-        //     selElement = PickToElements(uiDoc, doc);  
-        //     angle = options.Angle;
-        // }
-        // catch (OperationCanceledException)
-        // {
-        //     // ignored
-        // }
-        // finally
-        // {
-        //     using var transaction = new Transaction(doc);
-        //     transaction.Start("Rotate Elements");
-        //     foreach (Element elem in selElement)
-        //     {
-        //         zTools.RotateElements(elem, doc, angle);
-        //     }
-        //     transaction.Commit();
-        //     RibbonController.HideOptionsBar();
-        // }
-        
-
-        // RibbonController.HideOptionsBar();
+        RibbonController.HideOptionsBar();
         
         return Result.Succeeded;
     }
 
-    // private RotateViewModel SetupOptionsBar()
-    // {
-    //     var options = new RotateViewModel
-    //     {
-    //         Angle = 90
-    //     };
-    //     
-    //     var view = new RotateView(options);
-    //     
-    //     RibbonController.ShowOptionsBar(view);
-    //     
-    //     return options;
-    // }
+    private RotateViewModel SetupOptionsBar()
+    {
+        var options = new RotateViewModel
+        {
+            Angle = 0.0
+        };
+        
+        var view = new RotateView(options);
+        
+        RibbonController.ShowOptionsBar(view);
+        
+        return options;
+    }
     
     private static ICollection<Element> PickToElements(UIDocument uiDoc, Document doc)
     {
-        // Get the element selection of current document.
-        ICollection<Reference> selectedReferences = uiDoc.Selection.GetReferences();
-
-        if (0 == selectedReferences.Count)
-        {
-            // If no elements selected.
-            selectedReferences =
-                uiDoc.Selection.PickObjects(ObjectType.Element, "Pick elements to rotate");
-        }
-
         ICollection<Element> selectedElements = new List<Element>();
-
-        foreach (Reference reference in selectedReferences)
+        
+        IList<Reference> selRef = uiDoc.Selection.PickObjects(ObjectType.Element, "Pick elements to rotate");
+        if (selRef != null)
         {
-            selectedElements.Add(doc.GetElement(reference));
+            selectedElements = selRef.Select(doc.GetElement).ToList();
         }
         return selectedElements;
     }
