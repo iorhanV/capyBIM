@@ -1,0 +1,29 @@
+﻿<StackPanel
+    x:Class="capyBIM.Views.RotateView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:viewModels="clr-namespace:capyBIM.ViewModels"
+    d:DataContext="{d:DesignInstance Type=viewModels:RotateViewModel}"
+    mc:Ignorable="d"
+    Background="#FFE5F0D7"
+    Orientation="Horizontal"
+    Height="26"
+    d:DesignWidth="430">
+    
+    <StackPanel.InputBindings>
+        <KeyBinding Key="Enter" Command="{Binding OkCommand}" />
+        <KeyBinding Key="Space" />
+    </StackPanel.InputBindings>
+    
+    <TextBlock Margin="10 0 0 0" Text="Rotate Elements" VerticalAlignment="Center" />
+    <Border Width="3" BorderThickness="1 0" Background="LightGray" Margin="8 0" />
+    <TextBlock Text="Angle:" VerticalAlignment="Center" Margin="0,0,2,0"/>
+    <TextBox Width="50" HorizontalContentAlignment="Right" Margin="2 1 0 1" 
+             VerticalContentAlignment="Center"
+             Text="{Binding Angle, UpdateSourceTrigger=PropertyChanged}"
+             BorderThickness="0 0 0 1" Background="#FFE5F0D7"
+             PreviewTextInput="NumericTextBox"/>
+    <TextBlock Text="°" VerticalAlignment="Center" />
+</StackPanel>
