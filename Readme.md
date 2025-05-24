@@ -7,13 +7,12 @@ Built to make your Revit workflow faster, and more reliable.
 ## Tools
 **Rotate**: Rotate selected elements counterclockwise to specified angle.
 
-More to come...
+_More to come..._
 
-### Supported Versions
+## Supported Versions
 Revit 2021-2026
 
-
-### License
+## License
 This project is licensed under the MIT License.
 
 Feel free to use it, share it and improve it.
