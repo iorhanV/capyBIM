@@ -5,7 +5,7 @@ A custom  Revit add-in create by me for you.
 Built to make your Revit workflow faster, and more reliable.
 
 ## Tools
-**Rotate**: Rotate selected elements counterclockwise to specified angle.
+**🔄️Rotate**: Rotate selected elements counterclockwise to specified angle.
 
 _More to come..._
 
