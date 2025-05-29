@@ -10,27 +10,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/RotateView.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/RotateView.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineL.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineL.xaml.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/Compile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Compile.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/StartupCommand.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesGitHub.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesGitHub.tiff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesIn.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesIn.tiff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesRVTDocs.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ResourcesRVTDocs.tiff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsRotate.tiff" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsRotate.tiff" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/ViewModels/capyBIMViewModel.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/capyBIMView.xaml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/capyBIMView.xaml.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +25,7 @@
     <option name="firstShow" value="false" />
   </component>
   <component name="Git.Settings">
+    <branch-grouping />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
         <entry key="$PROJECT_DIR$" value="master" />
@@ -61,6 +46,7 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1b2bb8cb74c64635925715cc3c8b092e2a6f18/e9/fdd29df1/IExternalCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/02/2861ead9/ManifestBasedResourceGroveler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/90/7c0daa0d/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1ffbf8550a84a39b94d417bfe30fb372a6f20/e6/5c1a9475/_003CModule_003E.cs" root0="FORCE_HIGHLIGHTING" />
@@ -73,6 +59,9 @@
     <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/VPLineLen.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -90,7 +79,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;#1 on dev&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -185,7 +174,14 @@
       <workItem from="1747991096149" duration="10373000" />
       <workItem from="1748010511447" duration="143000" />
       <workItem from="1748071266004" duration="99000" />
-      <workItem from="1748071671660" duration="11290000" />
+      <workItem from="1748071671660" duration="11427000" />
+      <workItem from="1748085604955" duration="435000" />
+      <workItem from="1748086117897" duration="625000" />
+      <workItem from="1748092073059" duration="1692000" />
+      <workItem from="1748100158433" duration="1235000" />
+      <workItem from="1748136249376" duration="1099000" />
+      <workItem from="1748262205439" duration="801000" />
+      <workItem from="1748514095142" duration="4916000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -211,7 +207,47 @@
       <option name="project" value="LOCAL" />
       <updated>1747994987131</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added Rotate Tool with OptionBar.">
+      <option name="closed" value="true" />
+      <created>1748085344161</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748085344161</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update Readme.md">
+      <option name="closed" value="true" />
+      <created>1748101307844</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1748101307844</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Update Readme.md">
+      <option name="closed" value="true" />
+      <created>1748136492893</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1748136492893</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Update Readme.md">
+      <option name="closed" value="true" />
+      <created>1748137092381</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748137092381</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Added VPLineLen.xaml">
+      <option name="closed" value="true" />
+      <created>1748262434531</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1748262434531</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,7 +260,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -234,7 +282,10 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="Initial commit." />
     <MESSAGE value="- Added Globals, Extensions and Resources&#10;- Added Resources panel&#10;- Started Rotate Tool implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="- Added Globals, Extensions and Resources&#10;- Added Resources panel&#10;- Started Rotate Tool implementation" />
+    <MESSAGE value="Added Rotate Tool with OptionBar." />
+    <MESSAGE value="Update Readme.md" />
+    <MESSAGE value="Added VPLineLen.xaml" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added VPLineLen.xaml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

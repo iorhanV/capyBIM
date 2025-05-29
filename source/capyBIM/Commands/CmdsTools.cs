@@ -1,4 +1,5 @@
-﻿using Autodesk.Revit.Attributes;
+﻿using System.Drawing;
+using Autodesk.Revit.Attributes;
 using Autodesk.Revit.UI;
 using Autodesk.Revit.UI.Selection;
 using zTools = capyBIM.Utilities.ToolsUtils;
@@ -72,5 +73,35 @@ public class CmdRotate : IExternalCommand
             selectedElements = selRef.Select(doc.GetElement).ToList();
         }
         return selectedElements;
+    }
+}
+
+public class CmdVPLineLen : IExternalCommand
+{
+    private double _minVersion = 2022;
+    public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+    {
+        var uiApp = commandData.Application;
+        var uiDoc = uiApp.ActiveUIDocument;
+        var doc = uiDoc.Document;
+        
+        FontFamily fontFamily = new FontFamily("Arial");
+        double size = 2.5;
+        double corFact = 3;
+
+
+        var collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
+        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType();
+        
+        using var transaction = new Transaction(doc);
+        transaction.Start("Rotate Elements");
+        foreach (var element in viewports)
+        {
+            var vp = (Viewport)element;
+            zTools.ResizeVP(vp, fontFamily, size, corFact);
+        }
+        transaction.Commit();
+        
+        return Result.Succeeded;
     }
 }

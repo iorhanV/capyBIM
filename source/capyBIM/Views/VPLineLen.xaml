@@ -11,23 +11,28 @@
         WindowStartupLocation="CenterScreen">
     
     
-    <Window.Resources>
-        <Style TargetType="TextBlock">
-            <Setter Property="FontFamily" Value="Century Gothic"/>
-        </Style>
-
-        <Style TargetType="ComboBox">
-            <Setter Property="FontFamily" Value="Century Gothic"/>
-        </Style>
-    </Window.Resources>
+    <!-- <Window.Resources> -->
+    <!--     <Style TargetType="TextBlock"> -->
+    <!--         <Setter Property="FontFamily" Value="Century Gothic"/> -->
+    <!--     </Style> -->
+    <!-- -->
+    <!--     <Style TargetType="ComboBox"> -->
+    <!--         <Setter Property="FontFamily" Value="Century Gothic"/> -->
+    <!--     </Style> -->
+    <!-- </Window.Resources> -->
 
     <StackPanel Margin="10">
 
         <!-- Card-like Box -->
-        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" Padding="10" Margin="0,0,0,0">
+        <Border BorderBrush="Gray" BorderThickness="1" CornerRadius="5" 
+                Padding="10" Margin="0,0,0,0">
             <StackPanel>
                 <TextBlock Text="VP LineLength Config" FontSize="14" FontWeight="Bold" Margin="0,0,0,10"/>
-                <TextBlock TextWrapping="WrapWithOverflow"><Run Text="Select your Font, Size and Correction "/><Run Text="Factor. "/><LineBreak/><Run/><LineBreak/><Run Text="This will be influenced by your Vie"/><Run Language="en-au" Text="w"/><Run Text="port Title Annotation Symbol"/><Run Language="en-au" Text="."/></TextBlock>
+                <TextBlock TextWrapping="WrapWithOverflow"><Run Text="Select your Font, Size and Correction "/>
+                    <Run Text="Factor. " /><LineBreak /><Run /><LineBreak />
+                    <Run Text="This will be influenced by your Vie" /><Run Language="en-au" Text="w" />
+                    <Run Text="port Title Annotation Symbol" /><Run Language="en-au" Text="." />
+                </TextBlock>
             </StackPanel>
         </Border>
 
@@ -51,7 +56,8 @@
             </Grid.ColumnDefinitions>
 
             <!-- Font Selection -->
-            <Label Content="Choose your font:" Grid.Column="0" VerticalAlignment="Center" Margin="-5,0,0,0" Height="25"/>
+            <Label Content="Choose your font:" Grid.Column="0" VerticalAlignment="Center" 
+                   Margin="-5,0,0,0" Height="25"/>
             <ComboBox x:Name="UiFontFamily" Grid.Row="1" Grid.Column="0" Margin="0,5,0,5" Height="30"/>
 
             <!-- Font Size -->
@@ -62,13 +68,14 @@
             <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="10,5,0,5" VerticalAlignment="Center" Height="30">
                 <TextBox x:Name="UiFontSize" Text="2.0" Width="60"
                  VerticalContentAlignment="Center" 
-                 HorizontalContentAlignment="Center" />
-                 <!-- PreviewTextInput="NumericTextBox"/> -->
+                 HorizontalContentAlignment="Center"
+                 PreviewTextInput="NumericTextBox"/>
                 <StackPanel Orientation="Vertical" Margin="5,0,0,0">
-                    <Button x:Name="FontSizeUp" FontSize="9" Padding="0" Content="▲" Height="13" Width="30" Margin="0,0,0,2" /> 
-                    <!-- Click="FontSizeUp_Click"/> -->
-                    <Button x:Name="FontSizeDown" FontSize="9" Padding="0" Content="▼" Height="13" Margin="0,2,0,0" /> 
-                    <!-- Click="FontSizeDown_Click"/> -->
+                    <Button x:Name="FontSizeUp" FontSize="9" Padding="0" Content="▲" Height="13" Width="30" 
+                            Margin="0,0,0,2" Click="FontSizeUp_Click"/>
+                    <Button x:Name="FontSizeDown" FontSize="9" Padding="0" Content="▼" Height="13" 
+                            Margin="0,2,0,0"
+                    Click="FontSizeDown_Click"/>
                 </StackPanel>
             </StackPanel>
         </Grid>
@@ -91,12 +98,13 @@
 
         <!-- Hidden DockPanel -->
         <DockPanel x:Name="SettingsSaved" Visibility="Collapsed">
-<!-- <Label x:Name="SavedMessage" Content="Settings successfully saved!" Foreground="Green" FontSize="14" FontWeight="Bold" Height="18"/> -->
-            <TextBlock TextAlignment="Center" Foreground="Green" FontSize="14" FontWeight="Bold" Height="18">Settings successfully saved!</TextBlock>
+            <TextBlock TextAlignment="Center" Foreground="Green" FontSize="14" FontWeight="Bold" Height="18">
+                Settings successfully saved!
+            </TextBlock>
         </DockPanel>
 
         <!-- Button Grid -->
-        <Grid x:Name="CheckboxbuttonsG">
+        <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
@@ -108,25 +116,25 @@
             <Button x:Name="PreviewBtn" Height="25"
                      Grid.Column="0" Grid.Row="0"
                      Content="Preview"
-                     Margin="0,10,3,0"/>
-                     <!-- Click="preview_btn_click" /> -->
+                     Margin="0,10,3,0"
+                     Click="PreviewBtnClick" />
             <Button x:Name="SetBtn" Height="25"
                      Grid.Column="1" Grid.Row="0"
                      Content="Set"
-                     Margin="3,10,3,0"/>
-                     <!-- Click="set_btn_click" /> -->
+                     Margin="3,10,3,0"
+                     Click="SetBtnClick" />
             <Button x:Name="CloseBtn" Height="25"
                      Grid.Column="2" Grid.Row="0"
                      Content="Close"
-                     Margin="3,10,0,0"/>
-                     <!-- Click="close_btn_click"/> -->
+                     Margin="3,10,0,0"
+                     Click="CloseBtnClick"/>
         </Grid>
 
         <!-- Separator -->
         <Separator Margin="0,10,0,10"/>
 
-        <!-- Shortcut Grid --><!--
-        <Grid x:Name="setshortcut_g" Height="40">
+        <!-- Shortcut Grid -->
+        <Grid Height="40">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
@@ -134,12 +142,12 @@
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Button x:Name="add_shortcut_btn" Height="25"
+            <Button x:Name="AddShortcutBtn" Height="25"
              Grid.Column="0" Grid.Row="0"
-             Click="add_shortcut_btn_click" Content="Add shortcut to Revit"
+             Click="AddShortcutBtnClick" Content="Add shortcut to Revit"
              Margin="0,10,50,0" Grid.ColumnSpan="2"/>
             <TextBox Height="25"
              Grid.Column="1" TextAlignment="Center" Grid.Row="0" Margin="100,10,10,0" Text="VL"/>
-        </Grid>-->
+        </Grid>
     </StackPanel>
 </Window>
