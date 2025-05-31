@@ -99,5 +99,14 @@ namespace capyBIM.Resources.Files {
                 return ResourceManager.GetString("ToolsRotate", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
+        internal static string ToolsVPLineLen {
+            get {
+                return ResourceManager.GetString("ToolsVPLineLen", resourceCulture);
+            }
+        }
     }
 }

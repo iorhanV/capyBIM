@@ -35,4 +35,7 @@ Quick access to rvtdocs.com for Revit documentation and resources.</value>
         <value>Description:
 Quick access the addin Github repo.</value>
     </data>
+    <data name="ToolsVPLineLen" xml:space="preserve">
+        <value />
+    </data>
 </root>

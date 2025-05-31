@@ -76,6 +76,7 @@ public class CmdRotate : IExternalCommand
     }
 }
 
+[Transaction(TransactionMode.Manual)]
 public class CmdVPLineLen : IExternalCommand
 {
     private double _minVersion = 2022;
@@ -85,21 +86,20 @@ public class CmdVPLineLen : IExternalCommand
         var uiDoc = uiApp.ActiveUIDocument;
         var doc = uiDoc.Document;
         
-        FontFamily fontFamily = new FontFamily("Arial");
-        double size = 2.5;
-        double corFact = 3;
+        // FontFamily fontFamily = new FontFamily("Century Gothic");
+        string fontFamily = "Century Gothic";
+        double size = 3;
+        double corFact = 0;
 
 
         var collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
-        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType();
+        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
         
         using var transaction = new Transaction(doc);
         transaction.Start("Rotate Elements");
-        foreach (var element in viewports)
-        {
-            var vp = (Viewport)element;
-            zTools.ResizeVP(vp, fontFamily, size, corFact);
-        }
+        
+        zTools.ResizeVP(viewports, fontFamily, size, corFact, doc);
+        
         transaction.Commit();
         
         return Result.Succeeded;

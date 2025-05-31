@@ -78,6 +78,9 @@ namespace capyBIM
 
             var pushRotate = panelTools.Ext_AddPushButton<CmdRotate>("Rotate");
             pushRotate.AddShortcuts("RS");
+            
+            var pushLine = panelTools.Ext_AddPushButton<CmdVPLineLen>("VPLineLen");
+            // pushRotate.AddShortcuts("RS");
 
         }
         
