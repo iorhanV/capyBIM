@@ -11,10 +11,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.Designer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Files/Tooltips.resx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,11 +48,14 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/02/2861ead9/ManifestBasedResourceGroveler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/90/7c0daa0d/String.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1ffbf8550a84a39b94d417bfe30fb372a6f20/e6/5c1a9475/_003CModule_003E.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8b580d94d7a4d9b85b5fcb450e12fc5200a520/5c/b4a7bc28/ElementType.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8b580d94d7a4d9b85b5fcb450e12fc5200a520/b7/e29ebf36/Viewport.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1a2372e6258b231bd8abd5d5ec4756e94208963608726ccc1cb05bbc9eeb96/ObservablePropertyAttribute.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6e599226e3176e2f988294a8f9985a236212f64c788af5e9f9720a979cd623d/ExternalApplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6f1c9ac893bb68f471e39d5d26b92f5749b0f1955321a05285cc7bdce8ac1e50/SystemExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/build/Build.Configuration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/Application.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/RotateView.g.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/VPLineLen.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -80,6 +80,7 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.4127726&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
@@ -183,7 +184,8 @@
       <workItem from="1748136249376" duration="1099000" />
       <workItem from="1748262205439" duration="801000" />
       <workItem from="1748514095142" duration="4951000" />
-      <workItem from="1748679439613" duration="6702000" />
+      <workItem from="1748679439613" duration="7335000" />
+      <workItem from="1748940064120" duration="4952000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -257,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748519070612</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="VPLineLength implementation.">
+      <option name="closed" value="true" />
+      <created>1748687269675</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748687269675</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -296,7 +306,8 @@
     <MESSAGE value="Update Readme.md" />
     <MESSAGE value="Added VPLineLen.xaml" />
     <MESSAGE value="Starting implementation of VPLine tool" />
-    <option name="LAST_COMMIT_MESSAGE" value="Starting implementation of VPLine tool" />
+    <MESSAGE value="VPLineLength implementation." />
+    <option name="LAST_COMMIT_MESSAGE" value="VPLineLength implementation." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -319,32 +330,6 @@
           </properties>
           <option name="timeStamp" value="4" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs</url>
-          <line>30</line>
-          <properties documentPath="C:\Users\Iorhan\RiderProjects\capyBIM\source\capyBIM\Utilities\ToolsUtils.cs" containingFunctionPresentation="Method 'ResizeVP'">
-            <startOffsets>
-              <option value="1161" />
-            </startOffsets>
-            <endOffsets>
-              <option value="1198" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs</url>
-          <line>70</line>
-          <properties documentPath="C:\Users\Iorhan\RiderProjects\capyBIM\source\capyBIM\Utilities\ToolsUtils.cs" containingFunctionPresentation="Method 'CreateTextNoteType'">
-            <startOffsets>
-              <option value="2392" />
-            </startOffsets>
-            <endOffsets>
-              <option value="2432" />
-            </endOffsets>
-          </properties>
-          <option name="timeStamp" value="12" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

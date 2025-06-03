@@ -95,13 +95,14 @@ public class CmdVPLineLen : IExternalCommand
         var collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
         var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
         
-        using var transaction = new Transaction(doc);
-        transaction.Start("Rotate Elements");
+        using (TransactionGroup transGroup = new TransactionGroup(doc, "Resize VP"))
+        {
+            transGroup.Start();
         
-        zTools.ResizeVP(viewports, fontFamily, size, corFact, doc);
-        
-        transaction.Commit();
-        
+            zTools.ResizeVP(viewports, fontFamily, size, corFact, doc);
+            
+            transGroup.Assimilate();
+        }
         return Result.Succeeded;
     }
 }

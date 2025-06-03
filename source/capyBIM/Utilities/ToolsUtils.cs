@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System.Diagnostics;
+using System.Drawing;
 
 namespace capyBIM.Utilities;
 
@@ -20,39 +21,60 @@ public abstract class ToolsUtils
 
     public static void ResizeVP(ICollection<Element> viewports, string fontFam, double fontSize, double correctionFactor, Document doc)
     {
-        ElementId? textNoteType = CreateTextNoteType(fontFam, fontSize, doc);
+        ElementId? textNoteType;
+        ICollection<ElementId?> toDelete = new List<ElementId?>();
+
+        using (Transaction t1 = new Transaction(doc, "Create text note type"))
+        {
+            t1.Start();
+            textNoteType = CreateTextNoteType(fontFam, fontSize, doc);
+            toDelete.Add(textNoteType);
+            t1.Commit();
+        }
 
         foreach (var element in viewports)
         {
             var viewport = (Viewport)element;
             var vpTitle = viewport.get_Parameter(BuiltInParameter.VIEWPORT_VIEW_NAME).AsString();
-            var sizeTitle = GetStringLength(vpTitle, textNoteType, doc);
+            var textNote = CreateTextNote(vpTitle, textNoteType, doc);
+            toDelete.Add(textNote.Id);
+            var sizeTitle = textNote.Width;
             double titleSize = sizeTitle + correctionFactor;
-            viewport.LabelLineLength = titleSize;
+            
+            using (Transaction t3 = new Transaction(doc, "Set Line"))
+            {
+                t3.Start();
+                viewport.LabelLineLength = titleSize;
+                t3.Commit();
+            }
         }
         
-        doc.Delete(textNoteType);
+        using (Transaction t4 = new Transaction(doc, "Delete Elements"))
+        {
+            t4.Start();
+            doc.Delete(toDelete);
+            t4.Commit();
+        }
+
         
     }
 
-    private static double GetStringLength(string text, ElementId? textNoteType, Document doc)
+    private static TextNote CreateTextNote(string text, ElementId? textNoteType, Document doc)
     {
         // Create variables
         XYZ xyz = new XYZ();
-        
-       // Create text note at origin
-        TextNote textNote = TextNote.Create(doc, doc.ActiveView.Id, xyz, text, textNoteType);
-        
-        
-        //TODO Text Wrapping not working, need to find a workaround. Maybe get bounding box or something.
-        // textNote.IsTextWrappingActive 
+        View activeView = doc.ActiveView;
+        TextNote textNote;
 
-        // textNote.get = true;
-        var stringLength = textNote.Width;
-        
-        doc.Delete(textNote.Id);
-
-        return stringLength;
+        // First transaction
+        using (Transaction t2 = new Transaction(doc, "Create text"))
+        {
+            t2.Start();
+            // Create text note at origin
+            textNote = TextNote.Create(doc, activeView.Id, xyz, text, textNoteType);
+            t2.Commit();
+        }
+        return textNote;
     }
     
     private static ElementId? CreateTextNoteType(string fontFam, double fontSize, Document doc)
