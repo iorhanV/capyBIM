@@ -12,7 +12,7 @@
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -186,6 +186,8 @@
       <workItem from="1748514095142" duration="4951000" />
       <workItem from="1748679439613" duration="7335000" />
       <workItem from="1748940064120" duration="4952000" />
+      <workItem from="1748945439255" duration="109000" />
+      <workItem from="1748952934669" duration="1500000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -267,7 +269,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748687269675</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="VPLineLen first working concept. &#10;#TODO tidying up">
+      <option name="closed" value="true" />
+      <created>1748945528124</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1748945528124</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -307,7 +317,8 @@
     <MESSAGE value="Added VPLineLen.xaml" />
     <MESSAGE value="Starting implementation of VPLine tool" />
     <MESSAGE value="VPLineLength implementation." />
-    <option name="LAST_COMMIT_MESSAGE" value="VPLineLength implementation." />
+    <MESSAGE value="VPLineLen first working concept. &#10;#TODO tidying up" />
+    <option name="LAST_COMMIT_MESSAGE" value="VPLineLen first working concept. &#10;#TODO tidying up" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
