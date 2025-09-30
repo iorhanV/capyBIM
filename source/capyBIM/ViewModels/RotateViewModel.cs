@@ -2,7 +2,6 @@
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 
-
 namespace capyBIM.ViewModels;
 
 public partial class RotateViewModel : ObservableObject

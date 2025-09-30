@@ -5,9 +5,12 @@ using capyBIM.ViewModels;
 using capyBIM.Views;
 using capyBIM.Views.Utils;
 using OperationCanceledException = Autodesk.Revit.Exceptions.OperationCanceledException;
+using cVP = capyBIM.Utilities.VPLineUtils;
+using zScr = capyBIM.Utilities.ScriptUtils;
 
 namespace capyBIM.CmdsTools;
 
+#region Rotate
 [Transaction(TransactionMode.Manual)]
 public class CmdRotate : IExternalCommand
 {
@@ -87,7 +90,9 @@ public class CmdRotate : IExternalCommand
         ElementTransformUtils.RotateElement(doc, elem.Id, axisLine, radians);
     }
 }
+#endregion
 
+#region VPLineLen
 [Transaction(TransactionMode.Manual)]
 public class CmdVPLineLen : IExternalCommand
 {
@@ -97,119 +102,100 @@ public class CmdVPLineLen : IExternalCommand
         var uiApp = commandData.Application;
         var uiDoc = uiApp.ActiveUIDocument;
         var doc = uiDoc.Document;
+        var activeView = doc.ActiveView;
+
+        if (!(activeView is ViewSheet))
+        {
+            TaskDialog.Show("Error", "Please open a sheet view to run this command.");
+            return Result.Cancelled;
+        }
+        
+        // Check for alt fire
+        var altFire = zScr.KeyHeldShift();
+        
+        var collector = new FilteredElementCollector(doc, activeView.Id);
+        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
+
+        if (!viewports.Any())
+        {
+            TaskDialog.Show("Error", "No viewports in active sheet.");
+            return Result.Cancelled;}
+        
+        if (altFire)
+        {
+            using (TransactionGroup transGroup = new TransactionGroup(doc, "Configuring VPLineLen"))
+            {
+                transGroup.Start();
+                var form = new VPLineLenView(uiApp, viewports);
+                var result = form.ShowDialog();
+                transGroup.Assimilate();
+            }
+            return Result.Succeeded;
+        }
         
         // FontFamily fontFamily = new FontFamily("Century Gothic");
         string fontFamily = "Century Gothic";
-        double size = 3;
-        double corFact = 0;
-
-
-        var collector = new FilteredElementCollector(doc, doc.ActiveView.Id);
-        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
+        double size = 5;
+        double corFact = 0.0023;
         
         using (TransactionGroup transGroup = new TransactionGroup(doc, "Resize VP"))
         {
             transGroup.Start();
         
-            ResizeVP(viewports, fontFamily, size, corFact, doc);
+            cVP.ResizeVP(viewports, fontFamily, size, corFact, doc);
             
             transGroup.Assimilate();
         }
         return Result.Succeeded;
     }
-    
-        public static void ResizeVP(ICollection<Element> viewports, string fontFam, double fontSize, double correctionFactor, Document doc)
-    {
-        ElementId? textNoteType;
-        ICollection<ElementId?> toDelete = new List<ElementId?>();
-
-        using (Transaction t1 = new Transaction(doc, "Create text note type"))
-        {
-            t1.Start();
-            textNoteType = CreateTextNoteType(fontFam, fontSize, doc);
-            toDelete.Add(textNoteType);
-            t1.Commit();
-        }
-
-        foreach (var element in viewports)
-        {
-            var viewport = (Viewport)element;
-            var vpTitle = viewport.get_Parameter(BuiltInParameter.VIEWPORT_VIEW_NAME).AsString();
-            var textNote = CreateTextNote(vpTitle, textNoteType, doc);
-            toDelete.Add(textNote.Id);
-            var sizeTitle = textNote.Width;
-            double titleSize = sizeTitle + correctionFactor;
-            
-            using (Transaction t3 = new Transaction(doc, "Set Line"))
-            {
-                t3.Start();
-                viewport.LabelLineLength = titleSize;
-                t3.Commit();
-            }
-        }
-        
-        using (Transaction t4 = new Transaction(doc, "Delete Elements"))
-        {
-            t4.Start();
-            doc.Delete(toDelete);
-            t4.Commit();
-        }
-
-        
-    }
-
-    private static TextNote CreateTextNote(string text, ElementId? textNoteType, Document doc)
-    {
-        // Create variables
-        XYZ xyz = new XYZ();
-        View activeView = doc.ActiveView;
-        TextNote textNote;
-
-        // First transaction
-        using (Transaction t2 = new Transaction(doc, "Create text"))
-        {
-            t2.Start();
-            // Create text note at origin
-            textNote = TextNote.Create(doc, activeView.Id, xyz, text, textNoteType);
-            t2.Commit();
-        }
-        return textNote;
-    }
-    
-    private static ElementId? CreateTextNoteType(string fontFam, double fontSize, Document doc)
-    {
-        // Create variables
-        string font = fontFam;
-        double size = UnitUtils.ConvertToInternalUnits(fontSize, UnitTypeId.Meters)/1000;
-        
-        TextNoteType? defaultTextType = new FilteredElementCollector(doc)
-            .OfClass(typeof(TextNoteType))
-            .Cast<TextNoteType>()
-            .FirstOrDefault();
-
-        if (defaultTextType != null)
-        {
-            var textNoteType = defaultTextType.Name;
-            var newType = defaultTextType.Duplicate("tempTEXT14");
- 
-            // Modify parameters (font, size)
-            newType.get_Parameter(BuiltInParameter.TEXT_FONT).Set(font);
-            newType.get_Parameter(BuiltInParameter.TEXT_SIZE).Set(size); // feet
-        
-            // Fixed parameters
-            newType.get_Parameter(BuiltInParameter.TEXT_STYLE_BOLD).Set(0); // 1 = true 0 = false
-            newType.get_Parameter(BuiltInParameter.TEXT_STYLE_ITALIC).Set(0);
-            newType.get_Parameter(BuiltInParameter.TEXT_STYLE_UNDERLINE).Set(0);
-            newType.get_Parameter(BuiltInParameter.TEXT_WIDTH_SCALE).Set(1);
-            // newType.get_Parameter(BuiltInParameter.TEXT_BACKGROUND).Set(0);
-            // newType.get_Parameter(BuiltInParameter.TEXT_TAB_SIZE).Set(1);
-            // newType.get_Parameter(BuiltInParameter.TEXT_BOX_VISIBILITY).Set(0);
-            // newType.get_Parameter(BuiltInParameter.LEADER_OFFSET_SHEET).Set(0);
-            // newType.get_Parameter(BuiltInParameter.LINE_PEN).Set(1);
-
-            return newType.Id;
-        }
-        return null;
-    }
-    
 }
+#endregion
+
+#region VPLineAll
+[Transaction(TransactionMode.Manual)]
+public class CmdVPLineLenAll : IExternalCommand
+{
+    public static readonly string CmdName = "Resize All VP Line";
+    public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+    {
+        var uiApp = commandData.Application;
+        var uiDoc = uiApp.ActiveUIDocument;
+        var doc = uiDoc.Document;
+        var activeView = doc.ActiveView;
+
+        if (!(activeView is ViewSheet))
+        {
+            TaskDialog.Show("Error", "Please open a sheet view to run this command.");
+            return Result.Cancelled;
+        }
+        
+        // Check for alt fire
+        var altFire = zScr.KeyHeldShift();
+        
+        // FontFamily fontFamily = new FontFamily("Century Gothic");
+        string fontFamily = "Century Gothic";
+        double size = 5;
+        double corFact = 0.0023;
+        
+        var collector = new FilteredElementCollector(doc, activeView.Id);
+        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
+        
+        using (TransactionGroup transGroup = new TransactionGroup(doc, CmdName))
+        {
+            transGroup.Start();
+            var form = new VPLineLenView(uiApp, viewports);
+            var result = form.ShowDialog();
+            transGroup.Assimilate();
+        }
+        
+        // var taskDia = new TaskDialog(CmdName);
+        // taskDia.MainInstruction = ("This will affect all viewports project");
+        // taskDia.MainContent = "Would you like to proceed?";
+        // taskDia.CommonButtons = TaskDialogCommonButtons.Yes | TaskDialogCommonButtons.No;
+        // var tastResult = taskDia.Show();
+        
+        return Result.Succeeded;
+    }
+}
+
+#endregion

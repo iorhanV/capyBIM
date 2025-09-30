@@ -10,7 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsVPLineLen.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsVPLineLenAll.tiff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ConvertUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ScriptUtils.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/VPLineUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +55,7 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1b2bb8cb74c64635925715cc3c8b092e2a6f18/e9/fdd29df1/IExternalCommand.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/02/2861ead9/ManifestBasedResourceGroveler.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3020f90f960f433086d545c4e07afdfd531820/90/7c0daa0d/String.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3430075ae6f74809856d6eadd486dfb8605238/d5/ae789a66/Window.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f1ffbf8550a84a39b94d417bfe30fb372a6f20/e6/5c1a9475/_003CModule_003E.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8b580d94d7a4d9b85b5fcb450e12fc5200a520/5c/b4a7bc28/ElementType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/f8b580d94d7a4d9b85b5fcb450e12fc5200a520/b7/e29ebf36/Viewport.cs" root0="FORCE_HIGHLIGHTING" />
@@ -53,9 +64,8 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6f1c9ac893bb68f471e39d5d26b92f5749b0f1955321a05285cc7bdce8ac1e50/SystemExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/build/Build.Configuration.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/Application.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/source/capyBIM/Utilities/ToolsUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/source/capyBIM/Extensions/DocumentExt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/RotateView.g.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/VPLineLen.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
@@ -188,6 +198,22 @@
       <workItem from="1748952934669" duration="1500000" />
       <workItem from="1748988780165" duration="660000" />
       <workItem from="1749128557218" duration="1040000" />
+      <workItem from="1750076531889" duration="1544000" />
+      <workItem from="1755261283545" duration="327000" />
+      <workItem from="1756295510488" duration="4157000" />
+      <workItem from="1756717682214" duration="1368000" />
+      <workItem from="1756764224327" duration="1574000" />
+      <workItem from="1756910110244" duration="2412000" />
+      <workItem from="1756912728044" duration="8000" />
+      <workItem from="1758344953891" duration="3031000" />
+      <workItem from="1758362558662" duration="1361000" />
+      <workItem from="1758366467151" duration="8067000" />
+      <workItem from="1758437673299" duration="1364000" />
+      <workItem from="1758457584994" duration="3126000" />
+      <workItem from="1758461226518" duration="1065000" />
+      <workItem from="1759065241194" duration="1369000" />
+      <workItem from="1759141254258" duration="1045000" />
+      <workItem from="1759142835378" duration="5923000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -285,7 +311,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748988817262</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="ExtIsEditable added to ElementExt.cs.">
+      <option name="closed" value="true" />
+      <created>1750076821119</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1750076821119</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -327,7 +361,8 @@
     <MESSAGE value="VPLineLength implementation." />
     <MESSAGE value="VPLineLen first working concept. &#10;#TODO tidying up" />
     <MESSAGE value="ToolsUtils.cs made redundant." />
-    <option name="LAST_COMMIT_MESSAGE" value="ToolsUtils.cs made redundant." />
+    <MESSAGE value="ExtIsEditable added to ElementExt.cs." />
+    <option name="LAST_COMMIT_MESSAGE" value="ExtIsEditable added to ElementExt.cs." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
