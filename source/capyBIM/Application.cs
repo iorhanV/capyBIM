@@ -16,7 +16,7 @@ namespace capyBIM
     /// <summary>
     ///     Application entry point
     /// </summary>
-// [UsedImplicitly]
+[UsedImplicitly]
     public class Application : IExternalApplication
     {
         #region Properties
@@ -56,7 +56,7 @@ namespace capyBIM
 
         public Result OnShutdown(UIControlledApplication application)
         {
-            throw new NotImplementedException();
+            return Result.Succeeded;
         }
 
         private void CreateRibbon(UIControlledApplication uiCtlApp)

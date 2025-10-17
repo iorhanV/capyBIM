@@ -6,7 +6,7 @@ using capyBIM.Views;
 using capyBIM.Views.Utils;
 using OperationCanceledException = Autodesk.Revit.Exceptions.OperationCanceledException;
 using cVP = capyBIM.Utilities.VPLineUtils;
-using zScr = capyBIM.Utilities.ScriptUtils;
+using cScr = capyBIM.Utilities.ScriptUtils;
 
 namespace capyBIM.CmdsTools;
 
@@ -111,7 +111,7 @@ public class CmdVPLineLen : IExternalCommand
         }
         
         // Check for alt fire
-        var altFire = zScr.KeyHeldShift();
+        var altFire = cScr.KeyHeldShift();
         
         var collector = new FilteredElementCollector(doc, activeView.Id);
         var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
@@ -170,7 +170,7 @@ public class CmdVPLineLenAll : IExternalCommand
         }
         
         // Check for alt fire
-        var altFire = zScr.KeyHeldShift();
+        var altFire = cScr.KeyHeldShift();
         
         // FontFamily fontFamily = new FontFamily("Century Gothic");
         string fontFamily = "Century Gothic";

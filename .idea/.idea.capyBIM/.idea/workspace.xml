@@ -10,17 +10,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsVPLineLen.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Resources/Icons/ToolsVPLineLenAll.tiff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ConvertUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/ScriptUtils.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/source/capyBIM/Utilities/VPLineUtils.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/ViewModels/RotateViewModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLen.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,10 +101,10 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/build/Build.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
@@ -133,10 +124,10 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/install/Installer.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
@@ -156,10 +147,10 @@
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
       <option name="AUTO_ATTACH_CHILDREN" value="0" />
-      <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="PROJECT_PATH" value="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" />
       <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
       <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
@@ -214,6 +205,9 @@
       <workItem from="1759065241194" duration="1369000" />
       <workItem from="1759141254258" duration="1045000" />
       <workItem from="1759142835378" duration="5923000" />
+      <workItem from="1759227627891" duration="104000" />
+      <workItem from="1759227754573" duration="288000" />
+      <workItem from="1759240869292" duration="5000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -319,7 +313,15 @@
       <option name="project" value="LOCAL" />
       <updated>1750076821119</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="VPLineLen updates">
+      <option name="closed" value="true" />
+      <created>1759227680857</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1759227680857</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -362,7 +364,8 @@
     <MESSAGE value="VPLineLen first working concept. &#10;#TODO tidying up" />
     <MESSAGE value="ToolsUtils.cs made redundant." />
     <MESSAGE value="ExtIsEditable added to ElementExt.cs." />
-    <option name="LAST_COMMIT_MESSAGE" value="ExtIsEditable added to ElementExt.cs." />
+    <MESSAGE value="VPLineLen updates" />
+    <option name="LAST_COMMIT_MESSAGE" value="VPLineLen updates" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
