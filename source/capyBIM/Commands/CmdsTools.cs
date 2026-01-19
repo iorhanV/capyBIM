@@ -199,3 +199,53 @@ public class CmdVPLineLenAll : IExternalCommand
 }
 
 #endregion
+
+#region WallJoin
+[Transaction(TransactionMode.Manual)]
+public class CmdWallUnjoin : IExternalCommand
+{
+    public static readonly string CmdName = "Resize All VP Line";
+    public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
+    {
+        var uiApp = commandData.Application;
+        var uiDoc = uiApp.ActiveUIDocument;
+        var doc = uiDoc.Document;
+        var activeView = doc.ActiveView;
+
+        if (!(activeView is ViewSheet))
+        {
+            TaskDialog.Show("Error", "Please open a sheet view to run this command.");
+            return Result.Cancelled;
+        }
+        
+        // Check for alt fire
+        var altFire = cScr.KeyHeldShift();
+        
+        // FontFamily fontFamily = new FontFamily("Century Gothic");
+        string fontFamily = "Century Gothic";
+        double size = 5;
+        double corFact = 0.0023;
+        
+        var collector = new FilteredElementCollector(doc, activeView.Id);
+        var viewports = collector.OfClass(typeof(Viewport)).WhereElementIsNotElementType().ToElements();
+        
+        using (TransactionGroup transGroup = new TransactionGroup(doc, CmdName))
+        {
+            transGroup.Start();
+            var form = new VPLineLenView(uiApp, viewports);
+            var result = form.ShowDialog();
+            transGroup.Assimilate();
+        }
+        
+        // var taskDia = new TaskDialog(CmdName);
+        // taskDia.MainInstruction = ("This will affect all viewports project");
+        // taskDia.MainContent = "Would you like to proceed?";
+        // taskDia.CommonButtons = TaskDialogCommonButtons.Yes | TaskDialogCommonButtons.No;
+        // var tastResult = taskDia.Show();
+        
+        return Result.Succeeded;
+    }
+}
+
+#endregion
+

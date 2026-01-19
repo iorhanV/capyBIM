@@ -119,6 +119,15 @@ public partial class VPLineLenView : Window
         // Select first item
         UIFontFamily.SelectedIndex = 0;
     }
+    
+    private void ToggleSwitch_Toggled(object sender, RoutedEventArgs e)
+    {
+        if (sender is CheckBox cb)
+        {
+            bool isWorking = cb.IsChecked ?? false;
+            // Do your work here!
+        }
+    }
 
     private void AddShortcutBtnClick(object sender, RoutedEventArgs e)
     {

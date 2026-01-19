@@ -133,7 +133,7 @@
 
         <!-- Separator -->
         <Separator Margin="0,10,0,10"/>
-
+        
         <!-- Shortcut Grid -->
         <Grid Height="40">
             <Grid.RowDefinitions>
@@ -150,5 +150,8 @@
             <TextBox Height="25"
              Grid.Column="1" TextAlignment="Center" Grid.Row="0" Margin="100,10,10,0" Text="VL"/>
         </Grid>
+        
+
+
     </StackPanel>
 </Window>

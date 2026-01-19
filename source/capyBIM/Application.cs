@@ -10,7 +10,6 @@ using zRib = capyBIM.Utilities.RibbonUtils;
 // using capyBIM.CmdsTools;
 // using capyBIM.Extensions;
 
-
 namespace capyBIM
 {
     /// <summary>

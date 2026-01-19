@@ -10,8 +10,39 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="60e9b083-9bf8-4838-b114-c4d1f3d6997a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.github/workflows/Compile.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/Compile.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/PublishRelease.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/PublishRelease.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.capyBIM/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuke/build.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuke/build.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nuke/parameters.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Nuke Clean.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Nuke Plan.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.run/Nuke.run.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Changelog.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Clean.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Compile.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Configuration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.CreateBundle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.CreateInstaller.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Publish.Clean.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Publish.GitHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.Regex.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/build/Build.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/Build.csproj.DotSettings" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/capyBIM.sln" beforeDir="false" afterPath="$PROJECT_DIR$/capyBIM.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/global.json" beforeDir="false" afterPath="$PROJECT_DIR$/global.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/Installer.Generator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/install/Installer.Generator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/Installer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/install/Installer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/install/Installer.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/install/Installer.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/source/capyBIM/Application.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Application.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Commands/CmdsTools.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml.cs" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/Views/VPLineLenView.xaml.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/source/capyBIM/capyBIM.sln" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +51,10 @@
   </component>
   <component name="DpaMonitoringSettings">
     <option name="firstShow" value="false" />
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="2" />
+    <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="Git.Settings">
     <branch-grouping />
@@ -58,6 +93,10 @@
     <setting file="file://$PROJECT_DIR$/source/capyBIM/Extensions/DocumentExt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/source/capyBIM/obj/Debug R24/Views/RotateView.g.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
@@ -75,32 +114,64 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
-    &quot;.NET Project.capyBIM.executor&quot;: &quot;Debug&quot;,
+    &quot;.NET Executable.Nuke.executor&quot;: &quot;dotTrace Profiler&quot;,
+    &quot;.NET Project.capyBIM.executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.4127726&quot;,
+    &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.sourceCode.C#&quot;,
+    &quot;to.speed.mode.migration.done&quot;: &quot;true&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
+  <component name="RecapSpentCounter">
+    <option name="endsOfQuotaMs" value="1769893200000" />
+    <option name="spentUsd" value="0.009599" />
+  </component>
+  <component name="RecapUselessUpdatesCounter">
+    <option name="suspendCountdown" value="7" />
+  </component>
   <component name="RunManager" selected=".NET Project.capyBIM">
     <configuration name="Build" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/build/Build.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Build" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -120,10 +191,29 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/install/Installer.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="Installer" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -143,10 +233,29 @@
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="" />
       <option name="PASS_PARENT_ENVS" value="1" />
-      <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="ENV_FILE_PATHS" value="" />
       <option name="REDIRECT_INPUT_PATH" value="" />
-      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="AUTO_ATTACH_CHILDREN" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/source/capyBIM/capyBIM.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" />
+      </method>
+    </configuration>
+    <configuration name="capyBIM" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
       <option name="MIXED_MODE_DEBUG" value="0" />
       <option name="USE_MONO" value="0" />
       <option name="RUNTIME_ARGUMENTS" value="" />
@@ -208,6 +317,24 @@
       <workItem from="1759227627891" duration="104000" />
       <workItem from="1759227754573" duration="288000" />
       <workItem from="1759240869292" duration="5000" />
+      <workItem from="1760699146551" duration="443000" />
+      <workItem from="1761299966040" duration="136000" />
+      <workItem from="1762168079679" duration="420000" />
+      <workItem from="1762262098324" duration="47000" />
+      <workItem from="1765331760706" duration="1366000" />
+      <workItem from="1767251251946" duration="221000" />
+      <workItem from="1767274313027" duration="114000" />
+      <workItem from="1767274841783" duration="344000" />
+      <workItem from="1767275218941" duration="89000" />
+      <workItem from="1767277138660" duration="158000" />
+      <workItem from="1767278060172" duration="145000" />
+      <workItem from="1767278257844" duration="231000" />
+      <workItem from="1767278508760" duration="243000" />
+      <workItem from="1767278776162" duration="403000" />
+      <workItem from="1767279218041" duration="1195000" />
+      <workItem from="1767310539494" duration="159000" />
+      <workItem from="1767310917304" duration="609000" />
+      <workItem from="1768809903056" duration="2838000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <option name="closed" value="true" />
@@ -321,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1759227680857</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="October commit">
+      <option name="closed" value="true" />
+      <created>1760699403358</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1760699403358</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -329,6 +464,10 @@
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.Identity.Client" />
+    <option featureType="dependencySupport" implementationName="dotnet:Microsoft.ApplicationInsights" />
+  </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -365,7 +504,8 @@
     <MESSAGE value="ToolsUtils.cs made redundant." />
     <MESSAGE value="ExtIsEditable added to ElementExt.cs." />
     <MESSAGE value="VPLineLen updates" />
-    <option name="LAST_COMMIT_MESSAGE" value="VPLineLen updates" />
+    <MESSAGE value="October commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="October commit" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

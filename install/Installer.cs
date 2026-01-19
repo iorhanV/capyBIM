@@ -1,12 +1,11 @@
-﻿using System;
-using Installer;
+﻿using Installer;
 using WixSharp;
 using WixSharp.CommonTasks;
 using WixSharp.Controls;
 using Assembly = System.Reflection.Assembly;
 
-const string outputName = "capyBIM";
-const string projectName = "capyBIM";
+const string outputName = "TestAddin";
+const string projectName = "TestAddin";
 
 var project = new Project
 {
@@ -15,7 +14,7 @@ var project = new Project
     Platform = Platform.x64,
     UI = WUI.WixUI_FeatureTree,
     MajorUpgrade = MajorUpgrade.Default,
-    GUID = new Guid("44C2B53E-3577-4353-8CE8-C5850444DE7C"),
+    GUID = new Guid("6965A199-B70F-4AFD-A576-2E1DA2E3CFA8"),
     BannerImage = @"install\Resources\Icons\BannerImage.png",
     BackgroundImage = @"install\Resources\Icons\BackgroundImage.png",
     Version = Assembly.GetExecutingAssembly().GetName().Version.ClearRevision(),
@@ -34,7 +33,7 @@ BuildMultiUserUserMsi();
 
 void BuildSingleUserMsi()
 {
-    project.InstallScope = InstallScope.perUser;
+    project.Scope = InstallScope.perUser;
     project.OutFileName = $"{outputName}-{project.Version}-SingleUser";
     project.Dirs =
     [
@@ -45,7 +44,7 @@ void BuildSingleUserMsi()
 
 void BuildMultiUserUserMsi()
 {
-    project.InstallScope = InstallScope.perMachine;
+    project.Scope = InstallScope.perMachine;
     project.OutFileName = $"{outputName}-{project.Version}-MultiUser";
     project.Dirs =
     [
